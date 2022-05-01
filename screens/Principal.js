@@ -7,7 +7,9 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 function Feed() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Feed!</Text>
+      <Text>
+      Carro - Descrição
+      </Text>
     </View>
   );
 }
@@ -15,7 +17,7 @@ function Feed() {
 function Profile() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Profile!</Text>
+      <Text>Bicicleta - Descrição</Text>
     </View>
   );
 }
@@ -23,7 +25,7 @@ function Profile() {
 function Notifications() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Notifications!</Text>
+      <Text>Moto Descrição</Text>
     </View>
   );
 }
@@ -39,32 +41,33 @@ export default function Principal() {
       }}
     >
       <Tab.Screen
-        name="Feed"
+        name="Carro"
         component={Feed}
         options={{
-          tabBarLabel: 'Home',
+          tabBarLabel: 'Carro',
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="home" color={color} size={size} />
+            <MaterialCommunityIcons name="car-hatchback" color={color} size={size} />
           ),
         }}
       />
+     
       <Tab.Screen
-        name="Notifications"
+        name="Moto"
         component={Notifications}
         options={{
-          tabBarLabel: 'Updates',
+          tabBarLabel: 'Moto',
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="bell" color={color} size={size} />
+            <MaterialCommunityIcons name="motorbike" color={color} size={size} />
           ),
         }}
       />
       <Tab.Screen
-        name="Profile"
+        name="Bicicleta"
         component={Profile}
         options={{
-          tabBarLabel: 'Profile',
+          tabBarLabel: 'Bicicleta',
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="account" color={color} size={size} />
+            <MaterialCommunityIcons name="bicycle" color={color} size={size} />
           ),
         }}
       />
